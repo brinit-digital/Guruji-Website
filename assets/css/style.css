@@ -51,6 +51,10 @@ body {
 	color: #777777;
 	background-color:#ffffff;
 	-webkit-font-smoothing: antialiased;
+      font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 /*--------- Body End -------*/
 /*---------- Normal Css Start -------*/
@@ -72,7 +76,7 @@ a:focus {
 	outline: none;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'Philosopher', sans-serif;
+	font-family: 'Outfit', sans-serif;
 	font-weight: 600;
 	line-height: 1.1;
 	color: #333333;
@@ -346,7 +350,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_menu {
     float: left;
-    width: 100%;
+    width: 105%;
 	position: relative;
 }
 .ast_menu ul {
@@ -360,7 +364,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	float:left;
 	margin-right:0px;
 	position:relative;
-    font-weight: 900;
+    font-weight: 700;
 	/*-webkit-transition: all 0.5s;*/
  /*   -moz-transition: all 0.5s;*/
  /*   -ms-transition: all 0.5s;*/
@@ -551,7 +555,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin-right: 30px;
     position: relative;
     text-transform: capitalize;
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 24px;
 }
 .ast_bannertext_wrapper ul li:last-child{
@@ -758,7 +762,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
     background-color: #ffffff;
-    padding: 100px 50px 100px 50px;
+    padding:50px;
     text-align: center;
     /* margin-top: -80px; */
     z-index: 1;
@@ -3689,7 +3693,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	position:absolute;
 	top:100%;
 	left:0px;
-	width:140px;
+	width:200px;
 	opacity:0;
 	visibility:hidden;
 	background-color:#333333;
@@ -4310,7 +4314,7 @@ li.ast_search , li.ast_cart{
 .ast_cart_list .ast_cart_info a{
 	font-size:16px;
 	font-weight:500;
-	font-family:'Philosopher', sans-serif;
+	font-family:'Outfit', sans-serif;
 	color:#333333;
 	margin-bottom:5px;
 	width:110px;
@@ -4330,7 +4334,7 @@ li.ast_search , li.ast_cart{
 }
 .ast_cart_box .ast_cart_total p span{
 	float:right;
-	font-family:'Philosopher', sans-serif;
+	font-family:'Outfit', sans-serif;
 }
 .ast_cart_box .ast_cart_btn{
 	text-align:center;

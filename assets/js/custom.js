@@ -75,6 +75,8 @@ Version: 1.0
 	autoplay:true,
     nav:true,
 	slideBy:1,
+	items: 2,
+	autoplayTimeout: 3000,
     responsive:{
         0:{
             items:1
@@ -107,7 +109,7 @@ Version: 1.0
 			nav: true
         },
         1200:{
-            items:2,
+            items:1,
 			nav: true
         }
     }
