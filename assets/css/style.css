@@ -859,7 +859,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 
 .ast_heading p {
 	float: none;
-    width: 55%;
+    width: 100%;
     font-size: 16px;
     margin: auto;
     text-align: center;
@@ -1215,13 +1215,13 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_wedo_wrapper{
 	float:left;
 	width:100%;
-	background-color:#f4f4f4;
+	/* background-color:#f4f4f4; */
 }
 .ast_vedic_astrology{
 	float:left;
 	width:100%;
 	padding:15px;
-	border:1px solid #e1e1e1;
+	/* border:1px solid #e1e1e1; */
 	margin-bottom:30px;
 	background-color:#ffffff;
     -webkit-transition: all 0.5s;
@@ -1229,13 +1229,14 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    border-radius: 13px;
 }
 .ast_vedic_astrology:hover{
-    -webkit-box-shadow: 0px 10px 15px -10px #777777;
-    -moz-box-shadow: 0px 10px 15px -10px #777777;
-    -ms-box-shadow: 0px 10px 15px -10px #777777;
-    -o-box-shadow: 0px 10px 15px -10px #777777;
-    box-shadow: 0px 10px 15px -10px #777777;
+    -webkit-box-shadow: 0px 0px 10px #7777774f;
+    -moz-box-shadow: 0px 0px 10px #7777774f;
+    -ms-box-shadow: 0px 0px 10px #7777774f;
+    -o-box-shadow: 0px 0px 10px #7777774f;
+    box-shadow: 0px 0px 10px #7777774f;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -1274,6 +1275,11 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width:45px;
 	height:45px;
 }
+.icn-fltr img,
+.ast_vedic_astrology img{
+    filter: hue-rotate(158deg);
+}
+
 .ast_vedic_astrology ul li a .ast_vedic_astro_info{
 	float:left;
 	width:calc(100% - 50px);
@@ -3552,10 +3558,11 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
     background-color: transparent;
-    border: 10px solid transparent;
+    /* border: 10px solid transparent; */
     text-align: center;
     padding: 15px;
     margin-bottom: 30px;
+    border-radius: 20PX;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -3563,13 +3570,13 @@ input:focus, textarea:focus, select:focus, button:focus {
     transition: all 0.5s;
 }
 .ast_vastu_box:hover{
-    border: 10px solid #f4f4f4;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 10px 15px -10px #777777;
-    -moz-box-shadow: 0px 10px 15px -10px #777777;
-    -ms-box-shadow: 0px 10px 15px -10px #777777;
-    -o-box-shadow: 0px 10px 15px -10px #777777;
-    box-shadow: 0px 10px 15px -10px #777777;
+    /* border: 10px solid #f4f4f4; */
+    /* background-color: #ffffff; */
+    -webkit-box-shadow: 0px 0px 15px #7777772f;
+    -moz-box-shadow: 0px 0px 15px #7777772f;
+    -ms-box-shadow: 0px 0px 15px #7777772f;
+    -o-box-shadow: 0px 0px 15px #7777772f;
+    box-shadow: 0px 0px 15px #7777772f;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -3598,6 +3605,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.ast_vastu_box img{
+    border-radius: 10px;
 }
 /*-------- Vastu css end ---------*/
 /*-------- Journal css start ---------*/
@@ -5574,3 +5585,14 @@ li.ast_search , li.ast_cart{
     margin-top: 130px;
 }
 }	
+
+.modal-btn{
+    background: transparent;
+    border: none;
+    color: #25abfe;
+}
+
+.ashram .owl-nav,
+.ashram .owl-dots {
+  display: none !important;
+}

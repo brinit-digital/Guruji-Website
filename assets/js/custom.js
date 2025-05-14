@@ -98,7 +98,7 @@ Version: 1.0
 	autoplay:true,
 	items: 2,
 	autoplayTimeout: 3000,
-	// autoplayHoverPause: true,
+	autoplayHoverPause: true,
     responsive:{
         0:{
             items:1,
@@ -325,3 +325,9 @@ $(document).ready(function() {
 });
 
 
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
