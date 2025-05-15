@@ -850,7 +850,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_heading h1{
 	float:left;
 	width:100%;
-	margin:0px 0px 10px 0px;
+	margin:0px 0px 25px 0px;
 	text-transform:capitalize;
 }
 .ast_heading h1 span{
@@ -945,7 +945,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_whywe_wrapper{
 	float:left;
 	width:100%;
-	background-color:#f4f4f4;
+	/* background-color:#f4f4f4; */
 }
 .ast_whywe_info{
 	float:left;
@@ -987,7 +987,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin-bottom: 0px;
     border-radius: 3px;
     z-index: -1;
-    padding-top: 25px;
+    /* padding-top: 25px; */
     padding-right: 10px;
     padding-left: 75px;
     -webkit-box-shadow: 0px 0px 1px 0px #e1e1e1;
@@ -1315,11 +1315,12 @@ input:focus, textarea:focus, select:focus, button:focus {
 	float:left;
 	width:100%;
 	text-align:center;
-    border-top: 1px solid #e1e1e1;
+    /* border-top: 1px solid #e1e1e1; */
     padding-top: 15px;
 }
 .ast_vedic_astro_box img{
 	display:inline-block;
+    border-radius: 13px;
 }
 .ast_vedic_astro_box p{
 	float:left;
@@ -1426,6 +1427,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    border-radius: 17px;
 }
 .ast_packages_box:hover{
     -webkit-box-shadow: 0px 10px 15px -10px #777777;
@@ -1545,7 +1547,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_packages_box.active{
     position: relative;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     -webkit-box-shadow: 0px 10px 15px -10px #777777;
     -moz-box-shadow: 0px 10px 15px -10px #777777;
     -ms-box-shadow: 0px 10px 15px -10px #777777;
@@ -2409,6 +2411,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_blog_img img {
     width: 100%;
+    border-radius: 15px;
 }	
 .ast_blog_info{
     float: left;
@@ -2466,7 +2469,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
-    transition: all 0.5s;	
+    transition: all 0.5s;
 }
 .ast_blog_info .ast_blog_info_heading a:hover{
 	color: #25abfe;
@@ -2507,6 +2510,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    border-radius: 15px;
 }
 .ast_blog_box:hover .ast_blog_img a:after{
 	opacity:1;
@@ -3104,13 +3108,14 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
     position: relative;
-    padding-top: 300px;
+    padding-top: 70px;
 }
 .ast_contact_map iframe{
 	float:left;
 	width:100%;
 	height:550px;
 	border:0px;
+    border-radius: 20px;
 }
 /*-------- Contact css end ---------*/
 /*-------- Team css end ---------*/
@@ -3549,6 +3554,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_vastu_info img{
 	margin-top:38px;
+    border-radius: 15px;
 }
 .ast_vastu_box_wrapper{
 	float:left;
@@ -3641,12 +3647,14 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
     background-color: #ffffff;
-    padding: 40px 25px;
+    padding: 100px;
     -webkit-box-shadow: 0px 4px 25px -6px #777777;
     -moz-box-shadow: 0px 4px 25px -6px #777777;
     -ms-box-shadow: 0px 4px 25px -6px #777777;
     -o-box-shadow: 0px 4px 25px -6px #777777;
     box-shadow: 0px 4px 25px -6px #777777;
+    border-radius: 20px;
+
 }
 .ast_journal_box_wrapper form h3{
 	float:left;
@@ -3667,11 +3675,12 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
 	color:#333333;
-	height:45px;
+	height:55px;
 	border:1px solid #e1e1e1;
 	margin-bottom:25px;
-	border-radius:3px;
+	border-radius:10px;
 	padding:0px 10px;
+    background: whitesmoke;
 }
 .ast_journal_box_wrapper form textarea{
     height: auto;
@@ -4997,6 +5006,7 @@ li.ast_search , li.ast_cart{
 .ast_palm_section .ast_palm_content{
     background-color: #f4f4f4;
     padding: 30px 20px 20px 190px;
+    border-radius: 15px;
 }
 .ast_palm_content h4{
 	margin-top:0;
@@ -5595,4 +5605,8 @@ li.ast_search , li.ast_cart{
 .ashram .owl-nav,
 .ashram .owl-dots {
   display: none !important;
+}
+
+.padd-50{
+    padding: 50px;
 }

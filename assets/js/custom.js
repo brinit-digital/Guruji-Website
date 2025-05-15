@@ -101,15 +101,15 @@ Version: 1.0
 	autoplayHoverPause: true,
     responsive:{
         0:{
-            items:1,
+            items:2,
 			nav: true
         },
         768:{
-            items:1,
+            items:2,
 			nav: true
         },
         1200:{
-            items:1,
+            items:2,
 			nav: true
         }
     }
@@ -142,7 +142,7 @@ Version: 1.0
 	});
 	
 	// Show Hide palmistry section
-	loadmore_palm(2);
+	loadmore_palm(3);
 	function loadmore_palm(target){
 		var cnt = 0;
 		var chk = 0;
@@ -157,7 +157,7 @@ Version: 1.0
 					$('#ast_loadmore').hide();
 				}
 			}
-			if(chk == 3){
+			if(chk == 5	){
 			  $('#ast_loadmore').hide();
 			}
 			
@@ -165,6 +165,32 @@ Version: 1.0
 	}
 	$('#ast_loadmore').on('click' , function(){
 		loadmore_palm(1);
+	}); 
+
+
+	loadmore_events(2);
+	function loadmore_events(target){
+		var cnt = 0;
+		var chk = 0;
+	    var lenght = $('.ast_vastu_wrapper .ast_vastu_box').length-1;
+		$('.ast_vastu_wrapper .ast_vastu_box').each(function(){
+		    chk++;
+			if($(this).css('display') != 'block'){
+				$(this).show();
+				cnt++;
+				if(cnt == target){ return false;}
+				if(chk == lenght){
+					$('#ast_loadmore').hide();
+				}
+			}
+			if(chk == 5	){
+			  $('#ast_loadmore').hide();
+			}
+			
+		});
+	}
+	$('#ast_loadmore').on('click' , function(){
+		loadmore_events(1);
 	}); 
 	
 	// Contact Form Submition
