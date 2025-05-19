@@ -512,7 +512,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     background-image: url(https://dummyimage.com/1920x950);
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 .ast_slider_wrapper.style_2{
 	background-image: url(../images/content/slider2.jpg);
@@ -804,6 +804,11 @@ input:focus, textarea:focus, select:focus, button:focus {
 .mt-15{
     margin-top: 15px;
 }
+.mt-50{
+    margin-top: 50px;
+}
+
+
 
 /*---------- Searchbox Css End  -------*/
 /*---------- Button css start -------*/
@@ -906,6 +911,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_about_info_img img{
     /* width: 350px; */
     margin-top: -50px;
+    border-radius: 15px;
 }
 /*---------- About Us css end -------*/
 /*---------- Video Tour css start -------*/
@@ -2322,7 +2328,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width: 100%;
 	background-color: #272727;
 	position:relative;
-	background-attachment:fixed;
+	/* background-attachment:fixed; */
 	background-size: cover;
 	color:#ffffff;
 	padding:200px 0px 100px 0px;
@@ -3069,14 +3075,14 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_contact_form {
     width: 50%;
-    position: absolute;
+    /* position: absolute; */
     background-color: #ffffff;
     padding: 50px;
     top: 0;
     left: 0;
     right: 0;
     margin: 0px auto;
-    border-radius: 3px;
+    border-radius: 20px;
     -webkit-box-shadow: 0px 0px 30px -10px #000000;
     -moz-box-shadow: 0px 0px 30px -10px #000000;
     -o-box-shadow: 0px 0px 30px -10px #000000;
@@ -3098,6 +3104,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	padding:0px 15px;
 	border:1px solid #e1e1e1;
 	margin-bottom:15px;
+    border-radius: 13px;
 }
 .ast_contact_form textarea{
 	height:auto;
@@ -3108,7 +3115,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     float: left;
     width: 100%;
     position: relative;
-    padding-top: 70px;
+    /* padding-top: 70px; */
 }
 .ast_contact_map iframe{
 	float:left;
@@ -4205,9 +4212,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_header_bottom{
 	position:absolute;
 }
-.ast_header_bottom.menu_fixed{
+/* .ast_header_bottom.menu_fixed{
 	position:fixed;
-}
+} */
 .ast_top_header{
 	padding:0;
 }
@@ -5138,11 +5145,11 @@ li.ast_search , li.ast_cart{
 	margin:0;
 }
 .horoscope_search{
-	background-image:-webkit-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('../images/content/breadcrumb_bg.jpg'));
-	background-image:-ms-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('../images/content/breadcrumb_bg.jpg'));
-	background-image:-moz-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('../images/content/breadcrumb_bg.jpg'));
-	background-image:-o-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('../images/content/breadcrumb_bg.jpg'));
-	background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) , url(../images/content/breadcrumb_bg.jpg);
+	background-image:-webkit-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('..assets/images/content/breadcrumb_bg.jpg'));
+	background-image:-ms-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('..assets/images/content/breadcrumb_bg.jpg'));
+	background-image:-moz-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('..assets/images/content/breadcrumb_bg.jpg'));
+	background-image:-o-linear-gradient(rgba(0,0,0,0.7) , rgba(0,0,0,0.7) , url('..assets/images/content/breadcrumb_bg.jpg'));
+	background-image:linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) , url(..assets/images/content/breadcrumb_bg.jpg);
 	background-size:cover;
 	background-attachment:fixed;
 }
