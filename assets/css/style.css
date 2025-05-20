@@ -522,7 +522,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_banner_text{
 	float:left;
-	width:100%;
+	width:93%;
 	text-align:center;
 	color:#fff;
 	position:relative;
@@ -531,7 +531,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_bannertext_wrapper{
 	float:left;
-	width:100%;
+	width:60%;
+    text-align: start;
 }
 .ast_bannertext_wrapper h1{
 	float:left;
@@ -807,6 +808,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 .mt-50{
     margin-top: 50px;
 }
+.mt-80{
+    margin-top: 80px;
+}
+
 
 
 
@@ -1027,7 +1032,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    border: 1px solid #e1e1e1;
+    /* border: 1px solid #e1e1e1; */
     padding: 30px 15px;
     border-radius: 20px;
     -webkit-transition: all 0.5s;
@@ -1035,9 +1040,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    box-shadow: 0px 0px 10px #c5c5c5;
+    box-shadow: 0px 0px 20px 0px #c5c5c5b3;
     /* background: linear-gradient(#25abfe1c 0 0) left / var(--p,0) no-repeat; */
-    background-color: #25abfe0f;
+    background-color: #25abfe08;
     transition: .5s,background-position 0s;
 }
 .ast_service_box:hover{
@@ -1070,6 +1075,8 @@ input:focus, textarea:focus, select:focus, button:focus {
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    transform: scaleX(-1);
+
 }
 .ast_service_box img{
 	display:inline-block;
@@ -1415,7 +1422,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_packages_wrapper{
 	float:left;
 	width:100%;
-	background-color:#f4f4f4;
+	background-color:rgb(244, 244, 244);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(37 171 254 / 30%) 50%, rgba(0, 0, 0, 0) 100%);
 }
 .ast_packages_mainbox{
 	float:left;
@@ -2332,7 +2340,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 	background-size: cover;
 	color:#ffffff;
 	padding:200px 0px 100px 0px;
-	background-image: url(https://dummyimage.com/1920x500);
+	background-image: linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/grji-brdcrmb.jpg);
+	/* background-image: url(../images/hero/grji-brdcrmb.jpg); */
     background-position: center center;
 	background-repeat: no-repeat;
 	text-align:center;
@@ -2986,7 +2995,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_contact_wrapper{
 	float:left;
 	width:100%;
-	background-color:#f4f4f4;
+	/* background-color:#f4f4f4; */
+    background: linear-gradient(to top, #25abfe00 0%, #25abfe 230%);
 }
 .ast_contact_info{
 	float:left;
@@ -3560,7 +3570,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	width:100%;
 }
 .ast_vastu_info img{
-	margin-top:38px;
+	margin-top:7px;
     border-radius: 15px;
 }
 .ast_vastu_box_wrapper{
@@ -3570,8 +3580,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_vastu_box{
     float: left;
     width: 100%;
-    background-color: transparent;
-    /* border: 10px solid transparent; */
+    background-color: white;
+    border: 1px solid #00000012;
     text-align: center;
     padding: 15px;
     margin-bottom: 30px;
@@ -5292,13 +5302,14 @@ li.ast_search , li.ast_cart{
 }
 /*--- about slider ---*/
 .ast_slider_wrapper.index_horoscope{
-	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/Horoscope.jpg);
+    height: 53rem;
+	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/grji-banner.jpg);
 }
 .ast_slider_wrapper.ast_index_gemstone{
 	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(https://dummyimage.com/1920x1080);
 }
 .ast_slider_wrapper.ast_index_tarot{
-	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(https://dummyimage.com/1920x1080);
+	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/grji-banner-abt.jpg);
 }
 .ast_slider_wrapper.ast_index_palmistry{
 	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(https://dummyimage.com/1920x1080);
@@ -5617,4 +5628,16 @@ li.ast_search , li.ast_cart{
 
 .padd-50{
     padding: 50px;
+}
+
+.b-rds-15{
+    border-radius: 15px;
+}
+
+.bg-ln{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(37 171 254 / 30%) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.txt-jsfy{
+    text-align: justify;
 }

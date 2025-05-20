@@ -164,7 +164,7 @@ Version: 1.0
 		});
 	}
 	$('#ast_loadmore').on('click' , function(){
-		loadmore_palm(1);
+		loadmore_palm(2);
 	}); 
 
 
