@@ -101,11 +101,11 @@ Version: 1.0
 	autoplayHoverPause: true,
     responsive:{
         0:{
-            items:2,
+            items:1,
 			nav: true
         },
         768:{
-            items:2,
+            items:1,
 			nav: true
         },
         1200:{

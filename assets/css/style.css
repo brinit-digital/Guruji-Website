@@ -799,7 +799,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     justify-content: start;
     justify-items: start;
     display: flex;
-    font-weight: 900;
+    /* font-weight: 900; */
 }
 
 .mt-15{
@@ -3857,6 +3857,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_menu {
     overflow-y: scroll;
     height: 100%;
+    width: 100%;
 }
 .ast_menu::-webkit-scrollbar {
     width: 5px;
@@ -5640,4 +5641,10 @@ li.ast_search , li.ast_cart{
 
 .txt-jsfy{
     text-align: justify;
+}
+
+.cntre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
