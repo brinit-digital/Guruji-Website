@@ -5660,6 +5660,7 @@ li.ast_search , li.ast_cart{
 .p-rltive{
     position: relative;
     z-index: 50;
+    filter: drop-shadow(0px 5px 10px);
 }
 
 .h-wheel{
@@ -5668,9 +5669,14 @@ li.ast_search , li.ast_cart{
     z-index: 0;
     margin-top: 60px;
     width: 25%;
+    filter: drop-shadow(0px 0px 3px CornflowerBlue);
 
 }
 
 .bx-shadow{
     box-shadow: 0px 0px 30px -10px #25abfe63;
+}
+
+.ast_vastu_box p{
+    text-align: center;
 }
