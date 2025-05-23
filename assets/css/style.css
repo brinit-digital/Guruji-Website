@@ -75,6 +75,10 @@ a:hover, a:focus {
 a:focus {
 	outline: none;
 }
+
+p {
+    text-align: justify;
+}
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Outfit', sans-serif;
 	font-weight: 600;
@@ -2315,7 +2319,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 	float:left;
 	width:100%;
 	text-align:center;
-	border-top:1px dotted #ffffff;
+	/* border-top:1px dotted #ffffff; */
 	padding-top:20px;
 }
 .ast_copyright_wrapper p{
@@ -2328,6 +2332,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_copyright_wrapper p a{
     font-weight: 700;
 	color: #000000;
+}
+
+.brdr-line{
+	border-top:1px dotted #ffffff;
 }
 /*---------- Footer Wrapper css end -------*/
 /*----Breadcrumb Start-----------*/
@@ -5310,7 +5318,7 @@ li.ast_search , li.ast_cart{
 	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(https://dummyimage.com/1920x1080);
 }
 .ast_slider_wrapper.ast_index_tarot{
-	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/grji-banner-abt.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(../images/hero/grji-banner1.jpg);
 }
 .ast_slider_wrapper.ast_index_palmistry{
 	background-image:linear-gradient(rgba(0,0,0,0.4) , rgba(0,0,0,0.4)) , url(https://dummyimage.com/1920x1080);
@@ -5647,4 +5655,22 @@ li.ast_search , li.ast_cart{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.p-rltive{
+    position: relative;
+    z-index: 50;
+}
+
+.h-wheel{
+    position: absolute;
+    margin: -388px;
+    z-index: 0;
+    margin-top: 60px;
+    width: 25%;
+
+}
+
+.bx-shadow{
+    box-shadow: 0px 0px 30px -10px #25abfe63;
 }
