@@ -19,6 +19,10 @@
 <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css">
 <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Ajax script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 <!-- Favicon Link -->
 <link rel="shortcut icon" type="image/png" href="assets/images/lgo.png">
 </head>
@@ -157,48 +161,51 @@
         <section>
             <div class="ast_searchbox_wrapper horoscope_search ast_toppadder70 ast_bottompadder70">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="ast_search_box">
-                            <h1>Get Numerology</h1>
-                            <div class="row">
-                                <div class="col-lg-4 col-md-3 col-sm-6 col-12">
-                                <input type="text" placeholder="Name">
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                                    <input type="text" placeholder="Age">
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <input type="text" placeholder="Date of Birth">
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <input type="text" placeholder="Time of Birth">
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <input type="text" placeholder="Place of Birth">
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <select>
-                                        <option value="select">--Gender--</option>
-                                        <option value="male">Male</option>
-                                        <option value="female">Female</option>
-                                    </select>
-                                </div>
-								<div class="col-lg-4 col-md-3 col-sm-6 col-12">
-                                    <input type="text" placeholder="Whatsapp Number">
-                                </div>
-                                <div class="col-lg-2 col-md-3 col-sm-6 col-12 text-center">
-                                    <!-- <button type="submit" class="ast_btn">Get now</button> -->
-                                    <a href="appointment.html" class="ast_btn">Get now</a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+					<form id="gform" action="">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="ast_search_box">
+								<h1>Get Astrology</h1>
+								<div class="row">
+									<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+									<input type="text" name="name" id="name" placeholder="Name">
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-6 col-12">
+										<input type="text" name="age" id="age" placeholder="Age">
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+										<input type="text" name="dateOfbirth" id="dateOfbirth" placeholder="Date of Birth">
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+										<input type="text" name="timeOfbirth" id="timeOfbirth" placeholder="Time of Birth">
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+										<input type="text" name="placeOfbirth" id="placeOfbirth" placeholder="Place of Birth">
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+										<select name="gender" id="gender">
+											<option value="" disabled="" selected="" hidden="">--Gender--</option>
+											<option value="male">Male</option>
+											<option value="female">Female</option>
+										</select>
+									</div>
+									<div class="col-lg-4 col-md-3 col-sm-6 col-12">
+										<input type="text" name="wnumber" id="wnumber" placeholder="Whatsapp Number">
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-6 col-12 text-center">
+										<button type="submit" class="ast_btn">Get now</button>
+										<!-- <a href="appointment.html" class="ast_btn">Get now</a> -->
+									</div>
+										<p id="submit-alert"></p>
+
+								</div>
+							</div>
+							</div>
+						</div>
+					</form>
                 </div>
             </div>
         </section>
-
         <!-- Class Details -->
         <section>
             <div class="ast_whywe_wrapper ast_toppadder70 ast_bottompadder70">
@@ -327,7 +334,7 @@
 					</div> -->
 					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
 						<div class="widget text-widget">
-							<img src="assets/images/lgo.png" alt="Logo">
+							<a href="index.html"><img src="assets/images/lgo.png" alt="Logo"></a>
 
 							<!-- <h4 class="widget-title">our newsletter</h4> -->
 							<div class="ast_newsletter mt-15">
@@ -344,11 +351,12 @@
 							<h4 class="widget-title">quick links</h4>
 							<div class="ast_sociallink">
 								<ul>
-									<li><a href="about.html">about</a></li>
-									<li><a href="blog.html">blog</a></li>
-									<li><a href="team.html">Astrologers</a></li>
-									<li><a href="error.html">404 error</a></li>
-									<li><a href="contact.html">contact</a></li>
+									<li><a href="about.html">about guruji</a></li>
+									<li><a href="ashramam.html">guruji Ahram</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="prediction.html">Guruji prediction</a></li>
+									<li><a href="classes.html">Classes</a></li>
+									<li><a href="shop.html">Shop</a></li>
 								</ul>
 							</div>				
 						</div>			
@@ -358,11 +366,12 @@
 							<h4 class="widget-title">our services</h4>
 							<div class="ast_servicelink">
 								<ul>
-									<li><a href="services.html">horoscopes</a></li>
-									<li><a href="services.html">gemstones</a></li>
-									<li><a href="services.html">numerology</a></li>
-									<li><a href="services.html">tarot cards</a></li>
-									<li><a href="services.html">Birth journal</a></li>
+									<li><a href="astrology.html">Astrology</a></li>
+									<li><a href="numerology.html">numerology</a></li>
+									<li><a href="occult-culture.html">Occult Culture</a></li>
+									<li><a href="prashanna-predictions.html">prashanna/predictions</a></li>
+									<li><a href="dosha-pariharam.html">Dosha Parihara</a></li>
+									<li><a href="vaastu.html">Vaastu</a></li>
 								</ul>
 							</div>				
 						</div>			
@@ -373,15 +382,21 @@
 							<div class="ast_gettouch">
 								<ul>
 									<li><i class="fa fa-home" aria-hidden="true"></i> <p>2794, Hayhurst Lane Bloomfield Township, MI 48302</p></li>
-									<li><i class="fa fa-at" aria-hidden="true"></i> <a href="#">support@website.com</a><a href="#">info@website.com</a></li>
-									<li><i class="fa fa-phone" aria-hidden="true"></i> <p>+1800 326 3264</p><p>+1800 326 3234</p></li>
+									<li><i class="fa fa-at" aria-hidden="true"></i> <a href="#">support@website.com</a></li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i> <p>+1800 326 3264</p></li>
 								</ul>
 							</div>				
 						</div>			
 					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+					<div class="brdr-line"></div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12">
 						<div class="ast_copyright_wrapper">
 							<p>&copy; Copyright 2025, All Rights Reserved - <a href="#">Guruji</a></p>				
+						</div>			
+					</div>	
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="ast_copyright_wrapper">
+							<p class="text-lg-end">Designed and Developed by -<a href="https://www.brinit.in/"> Brin'IT Digital LLP</a></p>				
 						</div>			
 					</div>	
 				</div>	
@@ -401,5 +416,23 @@
 <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 <!--Main js file End-->
+<!-- Form -->
+<script>
+	$("#gform").submit((e)=>{
+		e.preventDefault()
+		$.ajax({
+			url:"https://script.google.com/macros/s/AKfycbzmz-JJugJGSDnxGrhuIU_dy4ugrceIr9DNwqwhkQKi61E5wFzBg873fBlsyc86SbO1hQ/exec",
+			data:$("#gform").serialize(),
+			method:"post",
+			success: function(response) {
+				$("#submit-alert").text("Form Submitted successfully").css({"color": "grey", "font-weight": "700", "text-shadow": "1px 1px 11px #9dff00"});
+				setTimeout(() => window.location.reload(), 5000); // Reload after 5 seconds
+			},
+			error: function(err) {
+				$("#submit-alert").text("Something Went Wrong.. Please try submitting again or try Contacting through WhatsApp or Mobile Number").css({"color": "grey", "font-weight": "700", "text-shadow": "1px 1px 11px red"});
+			}
+		})
+	})
+</script>
 </body>
 </html>

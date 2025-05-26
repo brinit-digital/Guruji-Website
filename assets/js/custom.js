@@ -172,25 +172,25 @@ Version: 1.0
 	function loadmore_events(target){
 		var cnt = 0;
 		var chk = 0;
-	    var lenght = $('.ast_vastu_wrapper .ast_vastu_box').length-1;
-		$('.ast_vastu_wrapper .ast_vastu_box').each(function(){
+	    var lenght = $('.event-box .ast_vastu_box').length-1;
+		$('.event-box .ast_vastu_box').each(function(){
 		    chk++;
 			if($(this).css('display') != 'block'){
 				$(this).show();
 				cnt++;
 				if(cnt == target){ return false;}
 				if(chk == lenght){
-					$('#ast_loadmore').hide();
+					$('#ast_loadmore1').hide();
 				}
 			}
-			if(chk == 5	){
-			  $('#ast_loadmore').hide();
+			if(chk == 4	){
+			  $('#ast_loadmore1').hide();
 			}
 			
 		});
 	}
-	$('#ast_loadmore').on('click' , function(){
-		loadmore_events(1);
+	$('#ast_loadmore1').on('click' , function(){
+		loadmore_events(4);
 	}); 
 	
 	// Contact Form Submition
@@ -357,3 +357,5 @@ var myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
+
