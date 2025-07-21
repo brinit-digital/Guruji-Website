@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Begin Head -->
+<head>
+<title>Guruji</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="description" content="Astrology">
+<meta name="keywords" content="Astrology, signs, gemstones, tarot, horoscopes, cards, numerology, Zodiac">
+<meta name="author" content="hsoft" >
+<meta name="MobileOptimized" content="320">
+<!--Srart Style -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.css" integrity="sha512-r2BeFfarJSZf3teQ+0SMnCKS2UlU/xkLct52CALlAboavp4MR0EHiREQF3I+bFArKEOp5GGxPDAnnUbLHJ8UEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.theme.css" integrity="sha512-A0Z5apGnS0cNbERTamhdj458FUFjpgzwAewVzdgKcbQ+0nARJXXlhJdPgnT9tCAOKj6/ktqKj5rMFDi9NJVEbw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css" integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Favicon Link -->
+<link rel="shortcut icon" type="image/png" href="assets/images/lgo.png">
+<style>
+    .ast_footer_wrapper{
+    float: left;
+    width: 100%;
+    background-color: #222222;
+    background: linear-gradient(to top, #25abfe 10%, transparent);
+    /* position: fixed; */
+    bottom: 0;
+    z-index: -1;
+}
+.ast_footer_info{
+	float:left;
+	width:100%;
+	text-align:center;
+    margin-bottom: 50px;
+}
+.ast_footer_info img{
+	display:inline-block;
+	margin-bottom:15px;
+}
+.ast_footer_info p{
+	float:left;
+	width:100%;
+	color:#ffffff;
+	margin-bottom:20px;
+}
+.ast_footer_info ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.ast_footer_info ul li{
+	display:inline-block;
+	width:auto;
+	list-style:none;
+}
+.ast_footer_info ul li a{
+    float: left;
+    width: 40px;
+    height: 40px;
+	line-height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #777777;
+    margin: 5px;
+    color: #ffffff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_footer_info ul li a:hover{
+    background-color: #25abfe;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.widget.text-widget{
+	float:left;
+	width:100%;
+    margin-bottom: 70px;
+}
+
+.widget img{
+    filter: invert(1);
+}
+
+.widget-title{
+    float: left;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: #000000;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 15px;
+}
+.ast_newsletter{
+    float: left;
+    width: 100%;
+}
+.ast_newsletter p{
+    float: left;
+    width: 100%;
+    color: #000000;
+    margin-bottom: 25px;
+}
+.ast_newsletter_box{
+	float:left;
+	width:100%;
+}
+.ast_newsletter_box input{
+    float: left;
+    width: calc(100% - 65px);
+    height: 45px;
+    padding: 0px 15px;
+    border: 1px solid #ffffff;
+    border-right: 0px;
+    color:#ffffff;
+    border-radius: 3px 0px 0px 3px;
+    background-color: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_newsletter_box input:hover, .ast_newsletter_box input:focus{
+	background-color:rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_newsletter_box input::-webkit-input-placeholder { 
+  color: #ffffff;
+}
+.ast_newsletter_box input::-moz-placeholder {
+  color: #ffffff;
+}
+.ast_newsletter_box input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.ast_newsletter_box input:-moz-placeholder {
+  color: #ffffff;
+}
+.ast_newsletter_box button{
+    float: right;
+    width: 65px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #25abfe;
+    border: 1px solid #ffffff;
+    border-radius: 0px 3px 3px 0px;
+    padding: 0px;
+    background-color: transparent;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_newsletter_box button:hover, .ast_newsletter_box button:focus{
+	background-color: #25abfe;
+	color:#ffffff;
+	border: 1px solid #25abfe;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_servicelink{
+	float:left;
+	width:100%;
+}
+.ast_servicelink ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.ast_servicelink ul li{
+	float:left;
+	width:100%;
+	list-style:none;
+}
+.ast_servicelink ul li a{
+    float: left;
+    width: 100%;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 5px 0px 7px 0px;
+    /* border-bottom: 1px solid #444444; */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+.ast_servicelink ul li:first-child a{
+	padding-top: 0px;
+}
+.ast_servicelink ul li:last-child a{
+	padding-bottom: 0px;
+	border-bottom:0px;
+}
+.ast_servicelink ul li a:hover{
+	color: #25abfe;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_sociallink{
+	float:left;
+	width:100%;
+}
+.ast_sociallink ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.ast_sociallink ul li{
+	float:left;
+	width:100%;
+	list-style:none;
+}
+.ast_sociallink ul li a{
+    float: left;
+    width: 100%;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 5px 0px 7px 0px;
+    /* border-bottom: 1px solid #444444; */
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 600;
+}
+.ast_sociallink ul li:first-child a{
+	padding-top: 0px;
+}
+.ast_sociallink ul li:last-child a{
+	padding-bottom: 0px;
+	border-bottom:0px;
+}
+.ast_sociallink ul li a:hover{
+	color: #25abfe;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_gettouch{
+	float:left;
+	width:100%;
+}
+.ast_gettouch ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+.ast_gettouch ul li{
+	float:left;
+	width:100%;
+	list-style:none;
+	margin-bottom:15px;
+}
+.ast_gettouch ul li:last-child{
+	margin-bottom:0px;
+}
+.ast_gettouch ul li i{
+	float:left;
+	width:30px;
+	color: #25abfe;
+	font-size:20px;
+    padding-top: 3px;
+}
+.ast_gettouch ul li p{
+	float:right;
+	width:calc(100% - 30px);
+	color:#000000;
+	margin-bottom:0px;
+    font-weight: 600;
+}
+.ast_gettouch ul li a{
+    float: left;
+    width: calc(60% - 30px);
+    color: #000000;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    font-weight: 600;
+
+}
+.ast_gettouch ul li a:hover{
+	color: #25abfe;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.ast_copyright_wrapper{
+	float:left;
+	width:100%;
+	text-align:center;
+	/* border-top:1px dotted #ffffff; */
+	padding-top:20px;
+}
+.ast_copyright_wrapper p{
+	float:left;
+	width:100%;
+	margin-bottom:0px;
+	text-transform:capitalize;
+	color:#ffffff;
+}
+.ast_copyright_wrapper p a{
+    font-weight: 700;
+	color: #000000;
+}
+
+.brdr-line{
+	border-top:1px dotted #ffffff;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #777777;
+	background-color:#ffffff;
+	-webkit-font-smoothing: antialiased;
+      font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+/*--------- Body End -------*/
+/*---------- Normal Css Start -------*/
+a {
+	color: #777777;
+	text-decoration: none;
+	cursor:pointer;
+	-webkit-transition:all .3s;
+	-ms-transition:all .3s;
+	-o-transition:all .3s;
+	-moz-transition:all .3s;
+	transition:all .3s;
+}
+a:hover, a:focus {
+	color: #535465;
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+
+p {
+    text-align: justify;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 600;
+	line-height: 1.1;
+	color: #333333;
+}
+img {
+	max-width: 100%;
+}
+input, textarea, select, button {
+	outline: none;
+	box-shadow:none;
+}
+input:focus, textarea:focus, select:focus, button:focus {
+	outline: none;
+	box-shadow:none;
+}
+.ast_toppadder10{
+	padding-top:10px;
+}
+.ast_toppadder20{
+	padding-top:20px;
+}
+.ast_toppadder30{
+	padding-top:30px;
+}
+.ast_toppadder40{
+	padding-top:40px;
+}
+.ast_toppadder50{
+	padding-top:50px;
+}
+.ast_toppadder60{
+	padding-top:60px;
+}
+.ast_toppadder70{
+	padding-top:70px;
+}
+.ast_toppadder80{
+	padding-top:80px;
+}
+.ast_toppadder90{
+	padding-top:90px;
+}
+.ast_toppadder100{
+	padding-top:100px;
+}
+.ast_bottompadder10{
+	padding-bottom:10px;
+}
+.ast_bottompadder20{
+	padding-bottom:20px;
+}
+.ast_bottompadder30{
+	padding-bottom:30px;
+}
+.ast_bottompadder40{
+	padding-bottom:40px;
+}
+.ast_bottompadder50{
+	padding-bottom:50px;
+}
+.ast_bottompadder60{
+	padding-bottom:60px;
+}
+.ast_bottompadder70{
+	padding-bottom:70px;
+}
+.ast_bottompadder80{
+	padding-bottom:80px;
+}
+.ast_bottompadder90{
+	padding-bottom:90px;
+}
+.ast_bottompadder100{
+	padding-bottom:100px;
+}
+.ast_padderboth120{
+	padding:120px 0px;
+}
+</style>
+</head>
+<body>
+
+<!-- Footer wrapper start-->
+	<footer>
+		<div class="ast_footer_wrapper ast_toppadder70 ast_bottompadder20">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+						<div class="widget text-widget">
+							<a href="index.html"><img src="assets/images/lgo.png" alt="Logo"></a>
+
+							<div class="ast_newsletter mt-15">
+								<p>Making it look like readable English.The point of using Lorem Ipsum is that it has a more-or less normal distribution of letters.</p>
+							</div>				
+						</div>			
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+						<div class="widget text-widget">
+							<h4 class="widget-title">quick links</h4>
+							<div class="ast_sociallink">
+								<ul>
+									<li><a href="about.html">about guruji</a></li>
+									<li><a href="ashramam.html">guruji Ahram</a></li>
+									<li><a href="services.html">Services</a></li>
+									<li><a href="prediction.html">Guruji prediction</a></li>
+									<li><a href="classes.html">Classes</a></li>
+									<li><a href="shop.html">Shop</a></li>
+								</ul>
+							</div>				
+						</div>			
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-6 col-12">
+						<div class="widget text-widget">
+							<h4 class="widget-title">our services</h4>
+							<div class="ast_servicelink">
+								<ul>
+									<li><a href="astrology.html">Astrology</a></li>
+									<li><a href="numerology.html">numerology</a></li>
+									<li><a href="occult-culture.html">Occult Culture</a></li>
+									<li><a href="prashanna-predictions.html">prashanna/predictions</a></li>
+									<li><a href="dosha-pariharam.html">Dosha Parihara</a></li>
+									<li><a href="vaastu.html">Vaastu</a></li>
+								</ul>
+							</div>				
+						</div>			
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+						<div class="widget text-widget">
+							<h4 class="widget-title">get in touch</h4>
+							<div class="ast_gettouch">
+								<ul>
+									<li><i class="fa fa-home" aria-hidden="true"></i> <p>2794, Hayhurst Lane Bloomfield Township, MI 48302</p></li>
+									<li><i class="fa fa-at" aria-hidden="true"></i> <a href="#">support@website.com</a></li>
+									<li><i class="fa fa-phone" aria-hidden="true"></i> <p>+1800 326 3264</p></li>
+								</ul>
+							</div>				
+						</div>			
+					</div>
+					<div class="brdr-line"></div>
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="ast_copyright_wrapper">
+							<p>&copy; Copyright 2025, All Rights Reserved - <a href="#">Guruji</a></p>				
+						</div>			
+					</div>	
+					<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="ast_copyright_wrapper">
+							<p class="text-lg-end">Designed and Developed by -<a href="https://www.brinit.in/"> Brin'IT Digital LLP</a></p>				
+						</div>			
+					</div>	
+				</div>	
+			</div>
+		</div>
+	</footer>
+	<!-- Footer wrapper End-->
+
+
+<!--Main js file Style--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" integrity="sha512-oL84kLQMEPIS350nZEpvFH1whU0HHGNUDq/X3WBdDAvKP7jn06gHTsCsymsoPYKF/duN8ZxzzvQgOaaZSgcYtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.js" integrity="sha512-tOyzsVuGuz0il5EcXFi/qA5DI4BNLna4gHbWn+HbQBP0jmRhyqMKup24fzyKnxSX0jBxt2+qStqwwHDIh5TaGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js" integrity="sha512-IUpSKpPKlXuPokiYONEZUG/H4c1rw4VmbGdnBKB18qm/9jbnxQ4Rv5Da9qEmB3hIa3k4DxRNoZfB6FTpERnuOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js" integrity="sha512-W+fE2PngAaUn114foOtj7bJNDqrqANLKjGb6gyz159hoF1+NnEWRfgQtEpn3kCLjQlUQ/FAhTsmmqQNOx/RBOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.js" integrity="sha512-dPZE9SLz1NVUX9tSX9TYOs2SyaJRBZC9ogOc/VasDFSFrxSDkXv3ZCdgkG8/AzHQ+YVklyqDgSS3aDgMradlNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--Main js file End-->
+</body>
+</html>

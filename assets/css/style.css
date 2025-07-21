@@ -53,7 +53,7 @@ body {
 	-webkit-font-smoothing: antialiased;
       font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  /* font-weight: <weight>; */
   font-style: normal;
 }
 /*--------- Body End -------*/
@@ -526,7 +526,16 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 .ast_banner_text{
 	float:left;
-	width:93%;
+	width:105%;
+	text-align:center;
+	color:#fff;
+	position:relative;
+    overflow: hidden;
+	padding:250px 0px;
+}
+.ast_banner_text1{
+	float:left;
+	width: 96%;
 	text-align:center;
 	color:#fff;
 	position:relative;
@@ -537,6 +546,57 @@ input:focus, textarea:focus, select:focus, button:focus {
 	float:left;
 	width:60%;
     text-align: start;
+}
+.ast_bannertext_wrapper1{
+	float:right;
+	width:60%;
+    text-align: end;
+}
+.ast_bannertext_wrapper1 h1{
+	float:left;
+	width:100%;
+	text-transform:capitalize;
+	margin:50px 0px 0px 0px;
+    font-size: 60px;
+	color:#ffffff;
+	font-weight:400;
+}
+.ast_bannertext_wrapper1 ul{
+	float:left;
+	width:100%;
+	margin:0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+.ast_bannertext_wrapper1 ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+}
+.ast_bannertext_wrapper1 ul li:last-child{
+	margin-right:0px;
+}
+.ast_bannertext_wrapper1 ul li:after{
+    content: "*";
+    position: absolute;
+    top: 3px;
+    right: -20px;
+}
+.ast_bannertext_wrapper1 ul li:last-child:after{
+    display:none;
+}
+.ast_bannertext_wrapper1 p{
+	float:left;
+	width:100%;
+	margin:0px;
+    text-transform: capitalize;
+}
+.ast_bannertext_wrapper1 img{
+	display:inline-block;
 }
 .ast_bannertext_wrapper h1{
 	float:left;
@@ -867,7 +927,10 @@ input:focus, textarea:focus, select:focus, button:focus {
 	margin:0px 0px 25px 0px;
 	text-transform:capitalize;
 }
-.ast_heading h1 span{
+.ast_heading h1 span,
+.ast_heading h4 span,
+.ast_heading h6 span, 
+.ast_heading h5 span{
 	color: #25abfe;
 }
 
@@ -995,16 +1058,16 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_whywe_info_box_info{
     position: absolute;
     top: 20px;
-    left: 50px;
-    right: 0;
+    /* left: 50px; */
+    /* right: 0; */
     height: 80px;
     background-color: #ffffff;
     margin-bottom: 0px;
     border-radius: 3px;
     z-index: -1;
     /* padding-top: 25px; */
-    padding-right: 10px;
-    padding-left: 75px;
+    /* padding-right: 10px; */
+    /* padding-left: 75px; */
     -webkit-box-shadow: 0px 0px 1px 0px #e1e1e1;
     -moz-box-shadow: 0px 0px 1px 0px #e1e1e1;
     -o-box-shadow: 0px 0px 1px 0px #e1e1e1;
@@ -3600,6 +3663,11 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.ast_vastu_box.events{
+    height: 31.5rem;
+    
+}
 .ast_vastu_box:hover{
     /* border: 10px solid #f4f4f4; */
     /* background-color: #ffffff; */
@@ -3759,6 +3827,12 @@ input:focus, textarea:focus, select:focus, button:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+}
+
+@media (max-width: 1400px){
+    .ast_vastu_box.events{
+        height: auto;
+    }
 }
 @media (max-width: 1200px) {
 	.ast_team_box h4 {
@@ -4103,6 +4177,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 .ast_banner_text {
     padding: 100px 0px;
 }
+.ast_banner_text1 {
+    padding: 100px 0px;
+}
 .ast_waves{
 	display:none;
 }
@@ -4185,6 +4262,9 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin-top: 20px;
 }
 .ast_banner_text {
+    padding: 100px 0px;
+}
+.ast_banner_text1 {
     padding: 100px 0px;
 }
 .ast_bannertext_wrapper h1 {
@@ -5682,3 +5762,12 @@ li.ast_search , li.ast_cart{
     text-align: center;
 }
 
+.ml-class{
+    margin-left: 100px;
+}
+
+@media (max-width:1399px){
+    .ml-class{
+        margin-left: auto;
+    }
+}
